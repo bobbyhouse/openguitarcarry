@@ -2,6 +2,7 @@
 
 ### Requirements
 
+* NodeJS http://nodejs.org/
 * The SASS precompiler http://sass-lang.com/
 
 ### Getting Started
