@@ -1,7 +1,10 @@
 # Open Guitar Carry Rally Website
 
-### Getting Started
+### Requirements
 
+* The SASS precompiler http://sass-lang.com/
+
+### Getting Started
 
 Install node dependencies
 ```
