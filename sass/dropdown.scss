@@ -1,0 +1,139 @@
+/*
+<div class="dropdown">
+  <li class="dropdown-heading">
+    <a>Upcoming Events</a>
+    <ul class="dropdown-content">
+      <li>Nashville on January 6th 2014</a></li>
+      <li>Nashville on January 6th 2014</li>
+      <li>Nashville on January 6th 2014</li>
+    </ul>
+  </li>
+</div>
+*/
+
+.dropdown-content {
+  visibility: hidden;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown > .dropdown-heading:hover > .dropdown-content {
+  visibility: visible;
+}
+
+/*
+<div class="actionbox">
+  <div class="actionbox-content">
+    <ul class="dropdown">
+      <li class="dropdown-heading">
+        <a>Upcoming Events</a>
+        <ul class="dropdown-content">
+          <li>Nashville on January 6th 2014></li>
+          <li>Nashville on January 6th 2014</li>
+          <li>Nashville on January 6th 2014</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="actionbox-arrow"></div>
+  <div class="actionbox-stripes"></div>
+</div>
+
+$actionbox-primary-color: black;
+$actionbox-secondary-color: white;
+
+@keyframes barberpole {
+  from { background-position: 0 0; }
+  to   { background-position: 60px 30px; }
+}
+
+.actionbox {
+  margin: 0 auto;
+  background: $actionbox-primary-color;
+  position: relative;
+  width: 300px;
+  height: 50px;
+
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+
+.actionbox-arrow {
+  position: absolute;
+  left: -10px;
+  top: 25px;
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 25px solid $actionbox-primary-color;
+
+  -webkit-transition: .28s ease-in-out;
+  -moz-transition: .28s ease-in-out;
+  -o-transition: .28s ease-in-out;
+  transition: .28s ease-in-out;
+}
+
+.actionbox-stripes {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: 30px 30px;
+  background-image: linear-gradient(
+    45deg,
+    rgba($actionbox-secondary-color, 0.1)  25%,
+    transparent       25%,
+    transparent       50%,
+    rgba($actionbox-secondary-color, 0.1)  50%,
+    rgba($actionbox-secondary-color, 0.1)  75%,
+    transparent       75%,
+    transparent
+  );
+
+  transition: opacity 0.3s ease;
+  animation: barberpole 0.5s linear infinite;
+}
+
+.actionbox-content {
+  position: relative;
+  color: #fff;
+  height: 100%;
+  width: 100%;
+}
+
+.actionbox:hover {
+  width: 500px;
+  height: 200px;
+}
+
+.actionbox:hover > .actionbox-arrow {
+    top: 0px;
+   -webkit-transform: rotate(180deg);
+    transform: rotate(180deg)
+}
+
+.actionbox:hover > .actionbox-stripes {
+  opacity: 1;
+}
+
+.dropdown-content {
+  visibility: hidden;
+}
+
+.dropdown-content li {
+  padding: 10px;
+}
+
+.dropdown > .dropdown-heading:hover > .dropdown-content {
+  visibility: visible;
+}*/
