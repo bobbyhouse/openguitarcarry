@@ -17,9 +17,17 @@ module.exports = function(grunt) {
                     ext: '.min.css'
                 }]
             },
-
+        },
+        connect: {
+            server: {
+                options: {
+                    port: 8888,
+                    keepalive: true
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-connect');
 };
